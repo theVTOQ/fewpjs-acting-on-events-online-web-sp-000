@@ -2,7 +2,11 @@
 const dodger = document.getElementById("dodger");
 
 function moveDodgerLeft() {
+  let left = parseInt(dodger.style.left.replace("px", ""), 10);
 
+  if () {
+    dodger.style.left = `${left + 1}px`;
+  }
 }
 
 document.addEventListener("keydown", function(e){
