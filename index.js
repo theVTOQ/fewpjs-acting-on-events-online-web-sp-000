@@ -2,7 +2,17 @@
 const dodger = document.getElementById("dodger");
 const game = document.getElementById("game");
 const rightLimit = game.offsetWidth;
+const dodgerSize = dodger.offsetWidth;
+
 function moveDodgerLeft() {
+  let left = parseInt(dodger.style.left.replace("px", ""), 10);
+
+  if (left > 0) {
+    dodger.style.left = `${left - 1}px`;
+  }
+}
+
+function moveDodgerRight() {
   let left = parseInt(dodger.style.left.replace("px", ""), 10);
 
   if (left > 0) {
